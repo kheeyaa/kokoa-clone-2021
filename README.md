@@ -1,2 +1,3 @@
-# kokoa-clone-2021
-kokoa clone 2021 update
+# Kokoa Clone 2020 Update
+
+Css got so much better!
