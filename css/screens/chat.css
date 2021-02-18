@@ -65,13 +65,18 @@
   width: 100%;
   display: flex;
 }
-.message-row__content .message__info {
+.message-row {
   animation: messageSlideLeft 1s ease-in-out;
 }
 .message-row--own .message__info {
   opacity: 0;
   animation: messageSlideRight 1s ease-in-out forwards;
   animation-delay: 1s;
+}
+.message-row:nth-child(3) {
+  opacity: 0;
+  animation: messageSlideLeft 1s ease-in-out forwards;
+  animation-delay: 2s;
 }
 .message-row img {
   width: 50px;
