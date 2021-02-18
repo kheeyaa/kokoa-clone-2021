@@ -1,0 +1,35 @@
+/* 상태바 가로로 정렬 */
+.status-bar {
+  background-color: white;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  /* top,bottom - left, right */
+  padding: 5px 3px;
+}
+/* 상태바 1:1:1 */
+.status-bar__column {
+  width: 33%;
+}
+/* no service 와 wifi 간격 */
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+/* 시간 가운데 정렬 */
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+/* 배터리를 오른쪽 끝에 정렬 */
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* 배터리와 볼트 간격, 배터리 오른쪽왼쪽 간격 5px */
+.status-bar__column .fa-battery-full {
+  margin: 0px 5px;
+}
